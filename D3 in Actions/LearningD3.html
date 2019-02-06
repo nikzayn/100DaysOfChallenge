@@ -8,6 +8,7 @@
 </head>
 <body>
   <script>
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
     // 1. Adding D3
     d3.select("body")
       .append("h1")
@@ -17,7 +18,12 @@
    d3.selectAll('li')
       .text("list item")  
 
-    
+   //3. Work with D3    
+    d3.select('body').selectAll('h2')
+      .data(dataset)
+      .enter()
+      .append('h2')
+      .text('New Title')
 
   </script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
