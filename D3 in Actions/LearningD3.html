@@ -40,10 +40,16 @@
       .enter()
       .append("h2")
       .text((d) => (d + " USD"))
-      // Add your code below this line
-      
       .style("color", "blue")
       .style("font-family", "verdana")   
+   
+   //6. Styles Based On Data
+   .style("color",(d) =>{
+        if(d < 20){
+          return "red"
+        }
+        return "green"
+      });    
 
   </script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
