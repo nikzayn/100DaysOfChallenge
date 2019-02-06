@@ -15,7 +15,7 @@
       .text("Learning D3")
  
    //2. Select a group of D3 
-   d3.selectAll('li')
+    d3.selectAll('li')
       .text("list item")  
 
    //3. Work with D3    
@@ -24,6 +24,15 @@
       .enter()
       .append('h2')
       .text('New Title')
+   
+   //4. Work with dynamic data
+    d3.select("body").selectAll("h2")
+      .data(dataset)
+      .enter()
+      .append("h2")
+      // Add your code below this line
+      
+      .text((d) => d + ' USD');
 
   </script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
