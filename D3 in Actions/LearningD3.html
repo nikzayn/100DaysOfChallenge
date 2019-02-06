@@ -34,6 +34,17 @@
       
       .text((d) => d + ' USD');
 
+   //5. Inline Styling
+   d3.select("body").selectAll("h2")
+      .data(dataset)
+      .enter()
+      .append("h2")
+      .text((d) => (d + " USD"))
+      // Add your code below this line
+      
+      .style("color", "blue")
+      .style("font-family", "verdana")   
+
   </script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </body>
