@@ -49,8 +49,29 @@
           return "red"
         }
         return "green"
-      });    
+      });  
 
+   //7. Add Classes
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+      
+      d3.select("body").selectAll("div")
+        .data(dataset)
+        .enter()
+        .append("div")
+        // Add your code below this line
+        
+        .attr("class", "bar")    
+    //8. Height of an element
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+    
+    d3.select("body").selectAll("div")
+      .data(dataset)
+      .enter()
+      .append("div")
+      .attr("class", "bar")
+      // Add your code below this line
+      
+      .style("height", (d) => d)
   </script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </body>
