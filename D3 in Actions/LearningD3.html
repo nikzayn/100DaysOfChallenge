@@ -84,7 +84,7 @@
       
       .style("height", (d) => d)
 
-    //9. Bat Chart
+    //9. Bar Chart
     const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
     
     d3.select("body").selectAll("div")
@@ -94,6 +94,23 @@
       .attr("class", "bar")
       // Add your code below this line
       .style("height", (d) => (d*10 + "px"))  
+
+    //10. Display Shapes
+    const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+    
+    const w = 500;
+    const h = 100;
+    
+    const svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h)
+                  // Add your code below this line
+                     .append("rect")
+                     .attr('x', 0)
+                     .attr('y', 0)
+                     .attr("width", 25)
+                     .attr("height", 100)
   </script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </body>
