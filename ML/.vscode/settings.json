@@ -1,0 +1,7 @@
+{
+    // whitelist numpy to remove lint errors
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=numpy"
+    ],
+    "python.linting.enabled": true
+}
